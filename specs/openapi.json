@@ -1,0 +1,996 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API title",
+    "version": "1.0",
+    "description": "API description"
+  },
+  "paths": {
+    "/films": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "required": [
+                      "description",
+                      "director",
+                      "id",
+                      "locations",
+                      "people",
+                      "producer",
+                      "release_date",
+                      "rt_score",
+                      "species",
+                      "title",
+                      "url",
+                      "vehicles"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "director": {
+                        "type": "string"
+                      },
+                      "producer": {
+                        "type": "string"
+                      },
+                      "release_date": {
+                        "type": "string"
+                      },
+                      "rt_score": {
+                        "type": "string"
+                      },
+                      "people": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "species": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "locations": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "vehicles": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "url": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/films/2baf70d1-42bb-4437-b551-e5fed5a87abe": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "description",
+                    "director",
+                    "id",
+                    "length",
+                    "locations",
+                    "people",
+                    "producer",
+                    "release_date",
+                    "rt_score",
+                    "species",
+                    "title",
+                    "url",
+                    "vehicles"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "director": {
+                      "type": "string"
+                    },
+                    "producer": {
+                      "type": "string"
+                    },
+                    "release_date": {
+                      "type": "string"
+                    },
+                    "rt_score": {
+                      "type": "string"
+                    },
+                    "people": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "species": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "locations": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "vehicles": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "length": {
+                      "type": "null"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/people": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "required": [
+                      "age",
+                      "eye_color",
+                      "films",
+                      "gender",
+                      "hair_color",
+                      "id",
+                      "name",
+                      "species",
+                      "url"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "gender": {
+                        "type": "string"
+                      },
+                      "age": {
+                        "type": "string"
+                      },
+                      "eye_color": {
+                        "type": "string"
+                      },
+                      "hair_color": {
+                        "type": "string"
+                      },
+                      "films": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "species": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/people/08ffbce4-7f94-476a-95bc-76d3c3969c19": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "age",
+                    "eye_color",
+                    "films",
+                    "gender",
+                    "hair_color",
+                    "id",
+                    "length",
+                    "name",
+                    "species",
+                    "url"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "gender": {
+                      "type": "string"
+                    },
+                    "age": {
+                      "type": "string"
+                    },
+                    "eye_color": {
+                      "type": "string"
+                    },
+                    "hair_color": {
+                      "type": "string"
+                    },
+                    "films": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "species": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "length": {
+                      "type": "null"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/locations": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "required": [
+                      "climate",
+                      "films",
+                      "id",
+                      "name",
+                      "residents",
+                      "surface_water",
+                      "terrain",
+                      "url"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "climate": {
+                        "type": "string"
+                      },
+                      "terrain": {
+                        "type": "string"
+                      },
+                      "surface_water": {
+                        "type": "string"
+                      },
+                      "residents": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "films": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "url": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/locations/11014596-71b0-4b3e-b8c0-1c4b15f28b9a": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "climate",
+                    "films",
+                    "id",
+                    "length",
+                    "name",
+                    "residents",
+                    "surface_water",
+                    "terrain",
+                    "url"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "climate": {
+                      "type": "string"
+                    },
+                    "terrain": {
+                      "type": "string"
+                    },
+                    "surface_water": {
+                      "type": "string"
+                    },
+                    "residents": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "films": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "url": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "length": {
+                      "type": "null"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/species": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "required": [
+                      "classification",
+                      "eye_colors",
+                      "films",
+                      "hair_colors",
+                      "id",
+                      "name",
+                      "people",
+                      "url"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "classification": {
+                        "type": "string"
+                      },
+                      "eye_colors": {
+                        "type": "string"
+                      },
+                      "hair_colors": {
+                        "type": "string"
+                      },
+                      "people": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "films": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      },
+                      "url": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/species/603428ba-8a86-4b0b-a9f1-65df6abef3d3": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "classification",
+                    "eye_colors",
+                    "films",
+                    "hair_colors",
+                    "id",
+                    "length",
+                    "name",
+                    "people",
+                    "url"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "classification": {
+                      "type": "string"
+                    },
+                    "eye_colors": {
+                      "type": "string"
+                    },
+                    "hair_colors": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "people": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "films": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "length": {
+                      "type": "null"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/vehicles": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "required": [
+                      "description",
+                      "films",
+                      "id",
+                      "length",
+                      "name",
+                      "pilot",
+                      "url",
+                      "vehicle_class"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "vehicle_class": {
+                        "type": "string"
+                      },
+                      "length": {
+                        "type": "string"
+                      },
+                      "pilot": {
+                        "type": "string"
+                      },
+                      "films": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/vehicles/923d70c9-8f15-4972-ad53-0128b261d628": {
+      "summary": "Path summary",
+      "description": "Path description",
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Response description",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": [
+                    "description",
+                    "films",
+                    "id",
+                    "length",
+                    "name",
+                    "pilot",
+                    "url",
+                    "vehicle_class"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "vehicle_class": {
+                      "type": "string"
+                    },
+                    "length": {
+                      "type": "integer"
+                    },
+                    "pilot": {
+                      "type": "string"
+                    },
+                    "films": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "links": {}
+          }
+        },
+        "summary": "Operation summary",
+        "description": "Operation description",
+        "operationId": "id",
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://ghibliapi.herokuapp.com"
+    }
+  ]
+}
